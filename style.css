@@ -1,6 +1,5 @@
-/* setting up the grid
-see https://css-tricks.com/snippets/css/complete-guide-grid/#prop-display
-for more into */
+
+/*genral styyyyles  */
 body {
     background-color: #5ce0b9;
     background-image: linear-gradient(0deg, #5ce06b, #5ce0b9);
@@ -13,48 +12,17 @@ body {
     src: url(fonts/SpaceGrotesk-Regular.otf);
 }
 
-.front-page {
-    font-size: 3em;
-    margin: 0 auto;
-    padding: 1em;
-    width: 80%;
+hr {
+    border: 1px dashed black;
 }
 
-/* Style content */
+p {
+    font-size: 1em;
+}
 
-.p {}
-
-.h1 {}
+h1 {}
 
 h2 {}
-
-#toggleText1,
-#toggleText2,
-#toggleText3,
-#toggleText4,
-#toggleText5,
-#toggleText6,
-#toggleText7,
-#toggleText8,
-#toggleText9,
-#toggleText10 {
-    display: none;
-}
-
-
-
-.teaching-text p {
-    font-style: italic;
-}
-
-.h3 {}
-
-.centre {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
 h4 {
     margin: 1px;
@@ -70,16 +38,57 @@ a:link {
 
 a:visited {
     color: black;
-
 }
 
 a:hover {
     color: orchid;
-
 }
 
 a:active {
     color: darkgreen;
+}
+
+/*top of site*/
+.site-title {
+    font-size: 1.2em;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.site-title a {
+    text-decoration: none;
+}
+
+.title-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-nav {
+    font-size: 2em;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.main-nav a {
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*page content*/
+.teaching-text p {
+    font-style: italic;
+}
+
+.about-img {
+    float: right;
+    width: 35%;
+    padding: 8px;
 }
 
 .page-text {
@@ -90,56 +99,53 @@ a:active {
 
 }
 
-.portfolio {
+.projects {
     display: grid;
     grid-template-columns: auto auto;
     width: 75%;
     margin: 0 auto;
 }
 
-.portfolio-item {
+.projects-item {
     padding: 10px;
     text-align: center;
 }
 
 
-.main-nav {
-    padding: 10px;
-    font-size: 30px;
+/*footer*/
+.footer-menu {
+    font-size: 1.1em;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
 }
 
-.main-nav a {
-    /*   border: 2px solid rgba(0, 0, 0, 0.8);*/
-    text-align: left;
-    padding: 14px 16px;
+.footer-menu a{
+       padding-right: 10px;
     text-decoration: none;
 }
 
+.footer-menu img {
+    padding-top: 10px;
+       max-width: 25px;
+}
 
 
-/* 
+.footer-cc {
+    font-size: .8em;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 10px;
+}
 
-.              .   .'.     \   /
-   \   /      .'. .' '.'   '  -=  o  =-
- -=  o  =-  .'   '              / | \
-   / | \                          |
-     |                            |
-     |                            |
-     |                      .=====|
-     |=====.                |.---.|
-     |.---.|                ||=o=||
-     ||=o=||                ||   ||
-     ||   ||                ||   ||
-     ||   ||                ||___||
-     ||___||                |[:::]|
-     |[:::]|                '-----'
-     '-----'
+/* Responsive layout*/
+@media screen and (max-width: 800px) {
 
-   Responsive layout Responsive layout 
-
-Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-
+    .projects {
+    grid-template-columns: auto;
+}
+    
     .front-page {
         font-size: 1.9em;
 
@@ -150,7 +156,6 @@ Responsive layout - makes a two column-layout instead of four columns */
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     font-size: 1.5em;
 }

@@ -69,8 +69,8 @@ a:active {
     text-align: center;
 }
 
-.page-text{
-      width: 80%;
+.page-text {
+    width: 80%;
     margin: 0 auto;
 
 }
@@ -114,12 +114,20 @@ a:active {
     grid-column: 1 / span 2;
 }
 
+.fullwidthproject {
+    grid-column: 1 / span 3;
+}
+
+.secondthirdproject {
+    grid-column: 2 / span 1;
+}
+
 .secondtwothirdsproject {
     grid-column: 2 / span 2;
 }
 
-.fullwidthproject {
-    grid-column: 1 / span 3;
+.thirdthirdproject {
+    grid-column: 3 / span 1;
 }
 
 
@@ -196,6 +204,10 @@ a:active {
     .front-page {
         font-size: 1.9em;
 
+    }
+
+    .thirdthirdproject {
+        grid-column: 1 / span 3;
     }
 
     .main-nav {

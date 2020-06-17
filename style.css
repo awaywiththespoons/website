@@ -69,8 +69,12 @@ a:active {
     text-align: center;
 }
 
-.page-text {
+.other-pages {
     width: 80%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto;
+    position: relative;
     margin: 0 auto;
 
 }
@@ -87,6 +91,14 @@ a:active {
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.main-nav a:hover {
+  text-decoration: overline;
+}
+
+.main-nav .active {
+    text-decoration: overline;
 }
 
 /*page content*/
@@ -129,7 +141,6 @@ a:active {
 .thirdthirdproject {
     grid-column: 3 / span 1;
 }
-
 
 .page-title {
     font-size: 1.4em;

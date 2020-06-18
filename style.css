@@ -1,9 +1,13 @@
 /*genral styyyyles  */
 body {
     background-color: #5ce0b9;
-    background-image: linear-gradient(0deg, #5ce06b, #5ce0b9);
-    color: black;
+    /*    background-image: linear-gradient(0deg, #5ce06b, #5ce0b9);*/
+    color: #032885;
     font-family: SpaceGrotesk-reg;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 75%;
+
 }
 
 @font-face {
@@ -12,20 +16,41 @@ body {
 }
 
 hr {
-    border: 1px dashed black;
+    border: 1px solid #032885;
 }
 
-hr.teaching {
-    border: 5px solid black;
+
+blockquote {
+    padding-bottom: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #1152f3;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1rem;
+    margin: 1em;
 }
 
-h1 {}
+/*site title*/
+h1 {
+    font-size: 2.6rem;
+}
 
-h2 {}
+/*page titles LARGE - teaching*/
+h2 {
+    font-size: 1.6rem;
+}
+
+/*page titles SMALL - teaching*/
+h3 {
+    font-size: 1.4rem;
+    /*    font-style: italic;*/
+    margin: 0 auto;
+    text-align: center;
+}
 
 h4 {
     margin: 1px;
@@ -36,11 +61,11 @@ h5 {
 }
 
 a:link {
-    color: black;
+    color: #032885;
 }
 
 a:visited {
-    color: black;
+    color: #032885;
 }
 
 a:hover {
@@ -48,130 +73,149 @@ a:hover {
 }
 
 a:active {
-    color: darkgreen;
+    color: #1d3776;
 }
 
-/*top of site*/
+/*my name at top of site*/
 .site-title {
-    font-size: 1.2em;
     margin: 0 auto;
-    width: 80%;
+    /*    width: 80%;*/
     text-align: center;
+    padding-bottom: 20px;
 }
 
+/*my name at top of site*/
 .site-title a {
     text-decoration: none;
+    color: #1152f3;
 }
 
-.title-text {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.other-pages {
-    width: 80%;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: auto auto;
-    position: relative;
-    margin: 0 auto;
-
-}
-
+/*Menus*/
 .main-nav {
-    font-size: 2em;
+    font-size: 1.8rem;
     margin: 0 auto;
-    width: 80%;
+    /*    width: 70%;*/
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
 
 .main-nav a {
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
+    color: #1152f3
 }
 
 .main-nav a:hover {
-  text-decoration: overline;
+    text-decoration: overline;
 }
 
 .main-nav .active {
     text-decoration: overline;
 }
 
-/*page content*/
-
-.about-img {
-    float: right;
-    width: 35%;
-    padding: 8px;
-}
-
-.project-page {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: auto auto auto;
-    width: 80%;
-    position: relative;
-    margin: 0 auto;
-}
-
-.onethirdproject {
-    grid-column: 1 / span 1;
-}
-
-.twothirdsproject {
-    grid-column: 1 / span 2;
-}
-
-.fullwidthproject {
-    grid-column: 1 / span 3;
-}
-
-.secondthirdproject {
-    grid-column: 2 / span 1;
-}
-
-.secondtwothirdsproject {
-    grid-column: 2 / span 2;
-}
-
-.thirdthirdproject {
-    grid-column: 3 / span 1;
-}
-
-.page-title {
-    font-size: 1.4em;
-    font-style: italic;
-    width: 80%;
-    margin: 10px auto;
-}
-
+/*PORTFOLIO*/
+/*for portfolio on main page*/
 .projects {
     display: grid;
     grid-template-columns: auto auto;
-    width: 75%;
+    /*    width: 75%;*/
     margin: 0 auto;
 }
 
+/*for portfolio thumbs on main page*/
 .projects-item {
     padding: 10px;
     text-align: center;
 }
 
-
-/*footer*/
-.footer-menu {
-    font-size: 1.1em;
-    margin: 0 auto;
-    width: 80%;
+/*title at top of portfolio pages*/
+.page-title {
+    font-size: 1.4em;
+    font-style: italic;
+    /*    width: 80%;*/
+    margin: 10px auto;
     text-align: center;
 }
 
+
+/*page content*/
+.about-img {
+    float: right;
+    width: 38%;
+    padding: 8px;
+    max-width: 400px;
+}
+
+/* for all pages except the portfolio */
+.project-page {
+    display: grid;
+    grid-gap: 0.8rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*    width: 70%;*/
+    position: relative;
+    margin: 0 auto;
+}
+
+/*
++------------+------------+------------+
+|first third |second third| third third|    
++------------+------------+------------+
+|     two third           |            |
++------------+------------+------------+
+|            full width                |
++------------+------------+------------+
+|            |    second two third     |
++------------+------------+------------+
+*/
+.firstthirdgrid {
+    grid-column: 1 / span 1;
+    /*    background: orange;*/
+}
+
+.secondthirdgrid {
+    grid-column: 2 / span 1;
+    /*       background: orange;*/
+}
+
+.thirdthirdgrid {
+    grid-column: 3 / span 1;
+    /*       background: orange;*/
+}
+
+.twothirdgrid {
+    grid-column: 1 / span 2;
+    /*         background: green;*/
+}
+
+.fullwidthgrid {
+    grid-column: 1 / span 3;
+    /*background: orange;*/
+}
+
+.secondtwothirdgrid {
+    grid-column: 2 / span 2;
+    /*background: orange;*/
+}
+
+
+/*footer*/
+.footer-area {
+    padding-top: 35px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center !important;
+    padding-bottom: 30px;
+}
+
+.footer-menu {
+    padding-top: 25px;
+    font-size: 1.1em;
+
+}
+
 .footer-menu a {
-    padding-right: 10px;
+    padding-right: 17px;
     text-decoration: none;
 }
 
@@ -180,52 +224,59 @@ a:active {
     max-width: 25px;
 }
 
-
-.footer-cc {
+.footer-cc p {
     font-size: .8em;
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
-    padding-bottom: 10px;
+}
+.footer-cc p {
+    padding-top: 10px;
 }
 
-/* Responsive layout*/
+/* SMALL SCREENS */
 @media screen and (max-width: 800px) {
 
     .projects {
         grid-template-columns: auto;
     }
 
-    .onethirdproject {
+    .firstthirdgrid {
         grid-column: 1 / span 3;
     }
 
-    .twothirdsproject {
+    .twothirdgrid {
         grid-column: 1 / span 3;
     }
 
-    .secondtwothirdsproject {
+    .secondtwothirdgrid {
         grid-column: 1 / span 3;
     }
 
-    .fullwidthproject {
+    .fullwidthgrid {
         grid-column: 1 / span 3;
     }
 
     .front-page {
         font-size: 1.9em;
-
     }
 
-    .thirdthirdproject {
+    .thirdthirdgrid {
         grid-column: 1 / span 3;
     }
 
     .main-nav {
-        display: inline-block;
+        display: block;
     }
-}
 
-@media screen and (max-width: 600px) {
-    font-size: 1.5em;
+    .about-img {
+        float: none;
+        width: 80%;
+    }
+
+    .footer-menu {
+        font-size: .8em;
+
+    }
+
+
+
+
 }

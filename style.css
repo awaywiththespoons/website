@@ -1,12 +1,12 @@
 /*genral styyyyles  */
 body {
     background-color: #5ce0b9;
-    /*    background-image: linear-gradient(0deg, #5ce06b, #5ce0b9);*/
     color: #032885;
     font-family: SpaceGrotesk-reg;
     margin: 0 auto;
     padding-top: 30px;
     width: 75%;
+
 
 }
 
@@ -16,9 +16,8 @@ body {
 }
 
 hr {
-    border: 1px solid #032885;
+    border: 1px solid #1152f3;
 }
-
 
 blockquote {
     padding-bottom: 20px;
@@ -61,19 +60,20 @@ h5 {
 }
 
 a:link {
-    color: #032885;
+    text-decoration: none;
+    color: #1152f3;
 }
 
 a:visited {
-    color: #032885;
+    color: #1152f3;
 }
 
 a:hover {
-    color: orchid;
+    color: #032885;
 }
 
 a:active {
-    color: #1d3776;
+    color: #1152f3;
 }
 
 /*my name at top of site*/
@@ -88,6 +88,7 @@ a:active {
 .site-title a {
     text-decoration: none;
     color: #1152f3;
+
 }
 
 /*Menus*/
@@ -103,7 +104,7 @@ a:active {
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
-    color: #1152f3
+    color: #1152f3;
 }
 
 .main-nav a:hover {
@@ -112,6 +113,7 @@ a:active {
 
 .main-nav .active {
     text-decoration: overline;
+    /*    font-style: italic;*/
 }
 
 /*PORTFOLIO*/
@@ -206,7 +208,9 @@ a:active {
     width: 80%;
     text-align: center !important;
     padding-bottom: 30px;
+    color: #1152f3;
 }
+
 
 .footer-menu {
     padding-top: 25px;
@@ -227,9 +231,11 @@ a:active {
 .footer-cc p {
     font-size: .8em;
 }
+
 .footer-cc p {
     padding-top: 10px;
 }
+
 
 /* SMALL SCREENS */
 @media screen and (max-width: 800px) {
@@ -275,8 +281,5 @@ a:active {
         font-size: .8em;
 
     }
-
-
-
 
 }

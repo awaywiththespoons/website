@@ -117,18 +117,23 @@ a:active {
 }
 
 /*PORTFOLIO*/
-/*for portfolio on main page*/
+/*container for portfolio on main page*/
 .projects {
     display: grid;
     grid-template-columns: auto auto;
     /*    width: 75%;*/
     margin: 0 auto;
+    align-items: center;
 }
 
-/*for portfolio thumbs on main page*/
+/*for thumbs on main page*/
 .projects-item {
     padding: 10px;
     text-align: center;
+}
+
+img.projects-item{
+        max-height: 100px;
 }
 
 /*title at top of portfolio pages*/
@@ -149,7 +154,7 @@ a:active {
     max-width: 400px;
 }
 
-/* for all pages except the portfolio */
+/* container for all pages except the portfolio */
 .project-page {
     display: grid;
     grid-gap: 0.8rem;

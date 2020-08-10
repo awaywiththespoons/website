@@ -123,17 +123,24 @@ a:active {
     grid-template-columns: auto auto;
     /*    width: 75%;*/
     margin: 0 auto;
-    align-items: center;
+ align-items: center;
+ justify-content: center !important;
 }
+
+.archiveprojects {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /*    width: 75%;*/
+    margin: 0 auto;
+ align-items: center;
+ justify-content: center !important;
+}
+
 
 /*for thumbs on main page*/
 .projects-item {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-}
-
-img.projects-item{
-        max-height: 100px;
 }
 
 /*title at top of portfolio pages*/
